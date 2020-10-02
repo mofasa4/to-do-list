@@ -7,5 +7,11 @@
 </head>
 <body>
     <h2>Todos Page</h2>
+
+    @foreach($ttodos as $todo)
+        <ul>
+            <li>{{ $todo->name }}</li>
+        </ul>
+    @endforeach
 </body>
 </html>
