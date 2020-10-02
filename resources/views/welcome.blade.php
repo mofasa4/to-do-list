@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    To Do List
+                    <a href="/todos">To Do List</a>
                 </div>
             </div>
         </div>
