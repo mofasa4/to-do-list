@@ -18,7 +18,10 @@
                     <div class="card card-body">
                         <ul class="list-group">
                             @foreach($ttodos as $todo)
-                                <li class="list-group-item">{{ $todo->name }}</li>
+                                <li class="list-group-item">
+                                    {{ $todo->name }}
+                                    <a href="todos/{{$todo->id}}" class="btn btn-sm btn-primary float-right">View</a>
+                                </li>
                             @endforeach
                         </ul>
                     </div>
