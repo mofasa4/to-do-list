@@ -26,10 +26,10 @@
                 <form action="/todos/{{$todo->id}}/update-todos" method="POST">
                 @csrf
                 <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="{{$todo->name}}">
+                    <input type="text" name="name" class="form-control" value="{{$todo->name}}">
                 </div>
                 <div class="form-group">
-                    <textarea name="description" cols="5" rows="5" class="form-control" placeholder="{{$todo->description}}"></textarea>
+                    <textarea name="description" cols="5" rows="5" class="form-control" >{{$todo->description}}</textarea>
                 </div>
                 <div class="form-group text-center">
                     <button type="submit" class="btn btn-success">Edit Todo</button>
